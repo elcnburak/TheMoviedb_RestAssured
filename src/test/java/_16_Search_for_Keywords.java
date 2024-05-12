@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 
 public class _16_Search_for_Keywords {
     @Test
-    public void _14_Search_for_Movies_Test() {
+    public void _16_Search_for_Keywords() {
         baseURI = "https://api.themoviedb.org/3";
 
         String bearerToken = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NmY3NjY2ZWI1ZjRlNWMyYTVjNjk0NjQ5ZmNmMmM1NCIsInN1YiI6IjY2MzYyN2YzNjYxMWI0MDEyYTY3ZDdiNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BbnpQ7WOmRb1D73I4Ua7jgVSIePyPV3qT7uOGoxB3Ik";
