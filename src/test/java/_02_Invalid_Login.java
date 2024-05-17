@@ -10,9 +10,10 @@ import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
 public class _02_Invalid_Login {
+
     @Test
     public void _02_Invalid_Login_Test() {
-        baseURI = "https://www.themoviedb.org";
+        baseURI = "https://api.themoviedb.org";
 
         // Kullanıcı adı, şifre ve token bilgilerini içeren bir HashMap oluşturma
         Map<String, String> userInfo = new HashMap<>();
@@ -25,8 +26,8 @@ public class _02_Invalid_Login {
 
         given()
                 .spec(reqSpec)
-                .get("/login")
+                .get("/3/authentication")
                 .then()
-                .statusCode(401);
+                .statusCode(403);
     }
 }
