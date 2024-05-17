@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 
 public class _04_Add_Movie_to_Favorites {
 
-    @Test(dependsOnMethods = "_03_Get_Account_Details._03_Get_Account_Details_Test")
+    @Test
     public void _04_Add_Movie_to_Favorites_Test() {
         baseURI = "https://api.themoviedb.org/3";
 
